@@ -1,0 +1,49 @@
+data:
+  - attributes:
+      created_at: '2022-03-25T01:40:39'
+      destination_override_endpoint: 'https://echo.apps.verygood.systems'
+      entries:
+        - classifiers: {}
+          config:
+            condition: AND
+            rules:
+              - expression:
+                  field: PathInfo
+                  operator: matches
+                  type: string
+                  values:
+                    - /post
+              - expression:
+                  field: ContentType
+                  operator: equals
+                  type: string
+                  values:
+                    - application/json
+          id: c2d68e7a-bb96-4250-a6ba-16d633464c16
+          id_selector: null
+          operation: REDACT
+          operations: null
+          phase: REQUEST
+          public_token_generator: UUID
+          targets:
+            - body
+          token_manager: PERSISTENT
+          transformer: JSON_PATH
+          transformer_config:
+            - $.ssn
+            - $.phone_number
+          transformer_config_map: null
+      host_endpoint: (.*)\.verygoodproxy\.com
+      id: 2d7b3382-eaa1-4155-b56f-6473532f5240
+      ordinal: null
+      port: 80
+      protocol: http
+      source_endpoint: '*'
+      tags:
+        name: Guide - Inbound
+        source: Inbound Guide
+        useCase: 'PII:Card Issuing'
+      updated_at: '2022-03-25T12:03:55'
+    id: 2d7b3382-eaa1-4155-b56f-6473532f5240
+    type: rule_chain
+version: 1
