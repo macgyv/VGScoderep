@@ -1,4 +1,5 @@
-const vgsForm = window.VGSCollect.create('tntsfeqzp4a', 'sandbox', () => {});
+const vgsForm = window.VGSCollect.create('tntkpxaxman', 'sandbox', () => {});
+
 
 const css = {
   boxSizing: 'border-box',
