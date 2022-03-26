@@ -1,5 +1,7 @@
 import requests
 
-response = requests.post("https://tntkpxaxman.sandbox.verygoodproxy.com/post",
-                          json={'account_number': 'ACn9AUkpAgeVhRrJRb1LMMGF'})
+response = requests.post("https://tnte6doqz8w.sandbox.verygoodproxy.com/post",
+                          json={ 'card_holder': '4242424242424242',
+                                 'card_cvc': '123',
+                                 'card_exp': '03/28'})
 print(str(response.text))
