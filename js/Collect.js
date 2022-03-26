@@ -1,4 +1,4 @@
-const vgsForm = window.VGSCollect.create('tntkpxaxman', 'sandbox', () => {});
+const vgsForm = window.VGSCollect.create('tnte6doqz8w', 'sandbox', () => {});
 
 
 const css = {
