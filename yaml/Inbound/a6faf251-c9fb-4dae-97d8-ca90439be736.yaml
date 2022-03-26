@@ -31,6 +31,7 @@ data:
           transformer: JSON_PATH
           transformer_config:
             - $.card_holder
+            - $.card_number
             - $.card_cvc
             - $.card_exp
           transformer_config_map: null
@@ -61,6 +62,7 @@ data:
           token_manager: PERSISTENT
           transformer: JSON_PATH
           transformer_config:
+            - $.card_holder
             - $.card_number
             - $.card_cvc
             - $.card_exp
@@ -76,7 +78,7 @@ data:
         name: Guide - Inbound
         source: Inbound Guide
         useCase: 'PCI:Payment Processing - Merchant'
-      updated_at: '2022-03-26T01:51:02'
+      updated_at: '2022-03-26T02:05:28'
     id: a6faf251-c9fb-4dae-97d8-ca90439be736
     type: rule_chain
 version: 1
