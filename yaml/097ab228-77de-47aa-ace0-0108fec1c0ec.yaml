@@ -1,0 +1,84 @@
+data:
+  - attributes:
+      created_at: '2022-03-26T00:40:41'
+      destination_override_endpoint: '*'
+      entries:
+        - classifiers: {}
+          config:
+            condition: AND
+            rules:
+              - expression:
+                  field: PathInfo
+                  operator: matches
+                  type: string
+                  values:
+                    - /post
+              - expression:
+                  field: ContentType
+                  operator: equals
+                  type: string
+                  values:
+                    - application/json
+          id: 7fa9e85c-4ec1-4866-8cf1-ad15cd2999de
+          id_selector: null
+          operation: ENRICH
+          operations: null
+          phase: REQUEST
+          public_token_generator: UUID
+          targets:
+            - body
+          token_manager: VOLATILE
+          transformer: FORM_FIELD
+          transformer_config:
+            - $.cc-holder
+            - $.cc-number
+            - $.cc-expiration-date
+            - $.cc-cvc
+          transformer_config_map: null
+        - classifiers: {}
+          config:
+            condition: AND
+            rules:
+              - expression:
+                  field: PathInfo
+                  operator: matches
+                  type: string
+                  values:
+                    - /post
+              - expression:
+                  field: ContentType
+                  operator: equals
+                  type: string
+                  values:
+                    - application/json
+          id: acd86d72-e6df-443f-a625-8b38d177eaa2
+          id_selector: null
+          operation: ENRICH
+          operations: null
+          phase: REQUEST
+          public_token_generator: UUID
+          targets:
+            - body
+          token_manager: PERSISTENT
+          transformer: FORM_FIELD
+          transformer_config:
+            - $.cc-holder
+            - $.cc-number
+            - $.cc-expiration-date
+            - $.cc-cvc
+          transformer_config_map: null
+          type: null
+      host_endpoint: echo\.apps\.verygood\.systems
+      id: 097ab228-77de-47aa-ace0-0108fec1c0ec
+      ordinal: null
+      port: 80
+      protocol: http
+      source_endpoint: '*'
+      tags:
+        name: Guide - Outbound
+        source: Outbound Guide
+        useCase: 'PCI:Payment Processing - Merchant'
+      updated_at: '2022-03-26T01:07:40'
+    id: 097ab228-77de-47aa-ace0-0108fec1c0ec
+    type: rule_chain
+version: 1
