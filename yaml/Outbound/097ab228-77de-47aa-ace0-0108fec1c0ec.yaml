@@ -21,6 +21,7 @@ data:
                     - application/json
           id: 7fa9e85c-4ec1-4866-8cf1-ad15cd2999de
           id_selector: null
+          isValid: false
           operation: ENRICH
           operations: null
           phase: REQUEST
@@ -35,6 +36,7 @@ data:
             - $.card_cvc
             - $.card_exp
           transformer_config_map: null
+          type: null
         - classifiers: {}
           config:
             condition: AND
@@ -60,7 +62,7 @@ data:
           targets:
             - body
           token_manager: PERSISTENT
-          transformer: FORM_FIELD
+          transformer: JSON_PATH
           transformer_config:
             - $.card_holder
             - $.card_number
