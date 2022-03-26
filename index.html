@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 <head>
-  <meta charset="utf-8">
-  <title></title>
   <link rel="stylesheet" href="css/VGSStyles.css">
-
 </head>
 <body>
-<script type="text/javascript" src="js/Collect.js"></script>
-  <form id="collect-form">
-    <div id="cc-holder" class="form-field"></div>
-    <div id="cc-number" class="form-field"></div>
-    <div class="form-field-group">
-    <div id="cc-expiration-date" class="form-field"></div>
-    <div id="cc-cvc" class="form-field"></div>
+  <form>
+    <div>
+      <label>Cardholder Name:</label>
+      <div id="cardholder-name" class="field-wrapper"></div>
     </div>
-    <button type="submit" className="form-button">Submit</button>
+    <div>
+      <label>Card number:</label>
+      <div id="card-number" class="field-wrapper"></div>
+    </div>
+    <div>
+      <label>Expiration Date:</label>
+      <div id="card-expiration-date" class="field-wrapper"></div>
+    </div>
+    <div>
+      <label>Card Security Code:</label>
+      <div id="card-security-code" class="field-wrapper"></div>
+    </div>
+    <button type="submit">Submit</button>
+    <pre id="response"></pre>
   </form>
+  <script type="text/javascript" src="https://js.verygoodvault.com/vgs-collect/2.12.0/vgs-collect.js"></script>
+  <script src="js/form.js"></script>
 </body>
 </html>
