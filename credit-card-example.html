@@ -11,10 +11,7 @@
       crossorigin="anonymous"
     />
 
-    <script
-      type="text/javascript"
-      src="https://js.verygoodvault.com/vgs-collect/2.5.0/vgs-collect.js"
-    ></script>
+    <script type="text/javascript" src="https://js.verygoodvault.com/vgs-collect/2.12.0/vgs-collect.js"></script>
 
     <style>
       body {
@@ -142,12 +139,7 @@
     <!--Include script with VGS Collect form initialization-->
     <script>
       // VGS Collect form initialization
-      const form = VGSCollect.create(
-        "<vault-id>",
-        "<environment>",
-        function (state) {}
-      );
-
+      const form = VGSCollect.create("tnte6doqz8w", "sandbox", function(state) {});
       // Create VGS Collect field for credit card name
       form.field("#cc-name", {
         type: "text",
