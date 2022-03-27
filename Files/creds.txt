@@ -1,0 +1,25 @@
+
+===VGS===
+HTTPS_PROXY_USERNAME="USrD8iSwgj98rX49amoGYiqk"
+HTTPS_PROXY_PASSWORD="500edfdf-0831-4105-a512-a7d3fd1e9c9d"
+Vault ID: tnte6doqz8w
+
+USrD8iSwgj98rX49amoGYiqk:500edfdf-0831-4105-a512-a7d3fd1e9c9d
+
+USrD8iSwgj98rX49amoGYiqk:500edfdf-0831-4105-a512-a7d3fd1e9c9d@tnte6doqz8w.SANDBOX.verygoodproxy.com:8080
+
+
+
+
+STRIPE
+pk_test_51KhPTvBI1KCMZju3yJ71gLnzs0W7m0T3t5hevx0WFZ2ObbdkmLGcO3Nz8JbrbRW9AwZ4px0PLqVJtOZr3bY214bS00AyNnhKC3
+
+sk_test_51KhPTvBI1KCMZju3sTZv5Zd6RryOKnmug0gqFBSrlFDP2gC74sKaKHN3Ay0eooD4wJusG9KuchKC7FJzhd360pBB00NdT5zgAD
+
+
+==Route and connections==
+echo.apps.verygood.systems
+api.stripe.com
+tnte6doqz8w.sandbox.verygoodproxy.com
+
+https://tnte6doqz8w.sandbox.verygoodproxy.com/post
