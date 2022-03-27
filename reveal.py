@@ -11,3 +11,11 @@ response = requests.post('https://tnte6doqz8w.sandbox.verygoodproxy.com/post',
                                 },
                          verify='certs/sandbox.pem')
 print(str(response.text))
+
+"""
+echo.apps.verygood.systems
+api.stripe.com
+
+https://tnte6doqz8w.sandbox.verygoodproxy.com/post
+
+"""
