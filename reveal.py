@@ -7,7 +7,7 @@ response = requests.post('https://echo.apps.verygood.systems/post',
                          json={"card_cvc": "tok_sandbox_f83HNxhZBgrAywnNTFvwpw",
                                 "card_exp": "tok_sandbox_7ipuvMaUtLVePy2Kw17vKY",
                                 "card_holder": "tok_sandbox_a975PkDRGeRqMbMPheSfou",
-                                "card_number": "tok_sandbox_svYnZ6VGheiSPBV6Rf5Ffd"
+                                "card_number": "tok_sandbox_kv3zXsHRyqcqabBdhwJrc2"
                                 },
                          verify='certs/sandbox.pem')
 print(str(response.text))

@@ -1,7 +1,7 @@
 # simple_app_test_vgs
 
 
-VGS injest any type of data securely and forward that sensitive data it's reverse proxy then aliased that data, now the aliased data forwards to merchants server then transfer to VGS Forward proxy going to issuing bank/target host.
+VGS injest any type of data securely and forward that sensitive data it's reverse proxy then aliased that data, now the aliased data forwards to merchants server then transfer to VGS Forward proxy going to issuing bank/target host/third parties.
 
 To configure this scenario, after registering a VGS account, you need to configure the INBOUND connection, add the upstream (merchant API Server) or in this case, is the VGS echo server (https://echo.apps.verygood.systems) in place with the client server, add the fields for REDACT like in this case
 
