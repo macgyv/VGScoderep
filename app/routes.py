@@ -19,10 +19,10 @@ def add_message():
 def forward():
     message = request.form['message']
 
-    os.environ['HTTP_PROXY'] = 'http://USERNAME:PASSWORD@{your_tenant_id}.SANDBOX.verygoodproxy.com:8080'
+    os.environ['HTTP_PROXY'] = 'http://USrD8iSwgj98rX49amoGYiqk:500edfdf-0831-4105-a512-a7d3fd1e9c9d@tnte6doqz8w.SANDBOX.verygoodproxy.com:8080'
     res = requests.post('https://echo.apps.verygood.systems/post',
                         json={'message': message},
-                        verify='{path_to_cert_file}')
+                        verify='{certs/sandbox.pem}')
 
     res = res.json()
     return render_template('forward.html', response=res)
