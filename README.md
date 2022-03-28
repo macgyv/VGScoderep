@@ -10,7 +10,7 @@ $.card_number
 $.card_cvc
 $.card_exp
 
-Same with the OUTBOUND, though the OUTBOUND (https://echo.apps.verygood.systems) should route to a payment gateway like STRIPE for integration
+Same with the OUTBOUND, though the OUTBOUND (https://echo.apps.verygood.systems) should route to a payment gateway like STRIPE for integration (api.stripe.com)
 
 also make a note of your VAULT ID and Access Credential account for later use.
 
