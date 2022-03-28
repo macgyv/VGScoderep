@@ -1,5 +1,11 @@
 # simple_app_test_vgs
 
+VGS Organization: Oliver Organics
+VGS Organizational ID: AC5Cw4xW9tiJ68FAZzPJpkSL
+Support: Enabled
+GH: https://github.com/macgyv/VGScoderep
+
+
 
 VGS injest any type of data securely and forward that sensitive data it's reverse proxy then aliased that data, now the aliased data forwards to merchants server then transfer to VGS Forward proxy going to issuing bank/target host/third parties.
 
