@@ -13,52 +13,8 @@
     <link rel="stylesheet" href="css/vstyles.css">
     <script type="text/javascript" src="https://js.verygoodvault.com/vgs-collect/2.12.0/vgs-collect.js"></script>
 
-    <style>
-      body {
-        padding: 25px;
-      }
 
-      span[id*="cc-"] {
-        display: block;
-        height: 40px;
-        margin-bottom: 15px;
-      }
 
-      span[id*="cc-"] iframe {
-        height: 100%;
-        width: 100%;
-      }
-
-      pre {
-        font-size: 12px;
-      }
-
-      .form-field {
-        display: block;
-        width: 100%;
-        height: calc(2.25rem + 2px);
-        padding: 0.375rem 0.75rem;
-        font-size: 1rem;
-        line-height: 1.5;
-        color: #495057;
-        background-color: #fff;
-        background-clip: padding-box;
-        border: 1px solid #ced4da;
-        border-radius: 0.25rem;
-        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-      }
-
-      .form-field iframe {
-        border: 0 none transparent;
-        height: 100%;
-        vertical-align: middle;
-        width: 100%;
-      }
-
-      p {
-        margin-bottom: 10px;
-      }
-    </style>
 
   </head>
   <body>
@@ -137,62 +93,9 @@
         </div>
       </div>
     </main>
+    <script type="text/javascript" src="js/forms.js"></script>
 
     <!--Include script with VGS Collect form initialization-->
-    <script>
-      // VGS Collect form initialization
-      const form = VGSCollect.create("tnte6doqz8w", "sandbox", function(state) {});
-      // Create VGS Collect field for credit card name
-      form.field("#cc-name", {
-        type: "text",
-        name: "card_name",
-        placeholder: "Joe Business",
-        validations: ["required"],
-      });
 
-      // Create VGS Collect field for credit card number
-      form.field("#cc-number", {
-        type: "card-number",
-        name: "card_number",
-        successColor: "#4F8A10",
-        errorColor: "#D8000C",
-        placeholder: "4111 1111 1111 1111",
-        validations: ["required", "validCardNumber"],
-      });
-
-      // Create VGS Collect field for CVC
-      form.field("#cc-cvc", {
-        type: "card-security-code",
-        name: "card_cvc",
-        placeholder: "344",
-        validations: ["required", "validCardSecurityCode"],
-      });
-
-      // Create VGS Collect field for credit card expiration date
-      form.field("#cc-expiration-date", {
-        type: "card-expiration-date",
-        name: "card_expirationDate",
-        placeholder: "01 / 2022",
-        validations: ["required", "validCardExpirationDate"],
-      });
-
-      // Submits all of the form fields by executing a POST request.
-      document.getElementById("cc-form").addEventListener(
-        "submit",
-        function (e) {
-          e.preventDefault();
-          form.submit("/post", {}, function (status, data) {
-            document.getElementById("result").innerHTML = JSON.stringify(
-              data.json,
-              null,
-              4
-            );
-          });
-        },
-        function (errors) {
-          document.getElementById("result").innerHTML = errors;
-        }
-      );
-    </script>
   </body>
 </html>
